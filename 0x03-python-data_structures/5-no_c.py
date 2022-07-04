@@ -2,5 +2,8 @@
 
 
 def no_c(my_string):
-output = my_string.translate({ord(i): None for i in 'cC'})
-return output
+        word = ""
+            for i in range(len(my_string)):
+                        if (my_string[i] != 'c' and my_string[i] != 'C'):
+                                        word = word + my_string[i]
+                                            return (word)
