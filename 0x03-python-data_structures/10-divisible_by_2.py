@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-
 def divisible_by_2(my_list=[]):
-    """divisible_by_2 - disvisibel by two"""
-    boolist = my_list[:]
-    for count, i in enumerate(my_list):
-        if i % 2 == 0:
-            boolist[count] = True
-        else:
-            boolist[count] = False
-            return(boolist)
+        if my_list is None:
+                    return
+                    bool_list = []
+                        for i in range(len(my_list)):
+                                    if my_list[i] % 2 == 0:
+                                                    bool_list.append(True)
+                                                            else:
+                                                                            bool_list.append(False)
+                                                                                return bool_list
