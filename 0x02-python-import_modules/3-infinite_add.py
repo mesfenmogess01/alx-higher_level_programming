@@ -7,6 +7,6 @@ if __name__ == "__main__":
         print("{}".format(arg_num))
     else:
         result = []
-        for i in range(1, arg_num + 1):
-            result.append(int(argv[i]))
-            print("{}".format(sum(result)))
+    for i in range(1, arg_num + 1):
+        result.append(int(argv[i]))
+        print("{}".format(sum(result)))
