@@ -3,7 +3,6 @@
 
 
 if __name__ == "__main__":
-        """Print number and lst of args."""
         import sys
 
         count = len(sys.argv) - 1
