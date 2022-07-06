@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
 if __name__ == "__main__":
+    """python args."""
     n = len(sys.argv)
     if n == 1:
         print("{:d} {}.".format(0, "arguments"))
