@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 
 
+
 def safe_print_division(a, b):
-    quotient = None
+    result = None
     try:
-        quotient = a / b
-        print("Inside result: {}".format(quotient))
+        result = a / b
+        print("Inside result: {}".format(result))
     except:
-        print("Inside result: {}".format(quotient))
+        print("Inside result: {}".format(result))
     finally:
-        return quotient
+        return result
