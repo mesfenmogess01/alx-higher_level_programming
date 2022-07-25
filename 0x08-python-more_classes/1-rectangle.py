@@ -21,12 +21,13 @@
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-    @property
+
+   @property
     def height(self):
         """Get/set the height of the rectangle."""
         return self.__height
 
-    @height.setter
+   @height.setter
     def height(self, value):
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
