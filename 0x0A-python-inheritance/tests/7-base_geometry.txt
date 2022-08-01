@@ -68,7 +68,8 @@ If ``value`` is a valid integer, the function does nothing.
 
 ::
 
-       >>> bg.integer_validator("valid number", 1)
+
+   >>> bg.integer_validator("valid number", 1)
 
 But, if ``value`` is not an integer, a ``TypeError`` is raised.
 
