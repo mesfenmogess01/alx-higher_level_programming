@@ -3,15 +3,14 @@ import sys
 
 
 def print_status():
-    '''
-    Printing the status of the request
-    '''
+    """
+        Printing the status of the request
+    """
     counter = 0
     size = 0
     file_size = 0
     status_codes = {"200": 0, "301": 0, "400": 0, "401": 0,
-                    "403": 0, "404": 0, "405": 0, "500": 0}
-
+            "403": 0, "404": 0, "405": 0, "500": 0}
     for l in sys.stdin:
         line = l.split()
         try:
