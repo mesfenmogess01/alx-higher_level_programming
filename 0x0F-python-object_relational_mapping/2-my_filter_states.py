@@ -10,8 +10,7 @@ import sys
 def main():
     """
        Function containing code to select the state provided
-       in the argument and is implemented in a safe way to prevent
-       an SQL injection.
+       in the argument.
     """
 
     # Create a database connection
@@ -23,8 +22,8 @@ def main():
     # Select states
     state_name = sys.argv[4]
     cur.execute(
-            "SELECT * FROM states WHERE\
-                    name = %s ORDER BY id ASC", (state_name, ))
+           "SELECT * FROM states WHERE\
+                   BINARY name='{}' ORDER BY id ASC".format(state_name))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
